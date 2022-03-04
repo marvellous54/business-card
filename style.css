@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: calibri;
+    font-family: outfit;
 }
 
 body{
@@ -99,7 +99,7 @@ section{
 .under-text{
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -109,12 +109,13 @@ section{
     .container{
         min-height: 90vh;
         flex-flow: column-reverse;
+        margin: 0 2em 0 2em;
     }
 
     .img-container{
         width: 100%;
         background-image: url(img/image-header-mobile.jpg);
-        height: 70vh;
+        height: 80vh;
     }
 
     .text-overall-container{
@@ -132,15 +133,19 @@ section{
     .numbers{
         flex-flow: column;
        justify-content: left;
+       margin-top: 2em;
     }
 
     .digits{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .contents{
         margin-bottom: 0;
         line-height: 1.3em;
+        font-size: 0.8em;
+        position: relative;
+        top: 1em;
     }
 
     .heading{
