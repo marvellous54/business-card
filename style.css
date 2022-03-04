@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: calibri;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+strong{
+    color: hsl(277, 67%, 58%);
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    height: 60vh;
+    width: 100%;
+    margin: 0 5em 0 5em;
+    display: flex;
+    border-radius: 0.5em;
+}
+
+.text-overall-container{
+    width: 50%;
+}
+
+.text-container{
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    margin: auto;
+    position: relative;
+    top: -1em;
+}
+
+.numbers{
+    display: flex;
+    width: 100%;
+}
+
+.img-container{
+    width: 50%;
+    height: 100%;
+    background-image: url(img/image-header-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(277, 72%, 42%);
+    opacity: 0.5;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding: 0 0 0.5em 0;
+    margin-bottom: 0.5em;
+}
+
+.contents{
+    font-size: 13px;
+    color: white;
+    margin-bottom: 3em;
+    line-height: 1.7em;
+}
+
+.first, .second, .third{
+    margin: 0  1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.first{
+    margin-left: 0;
+}
+
+.digits{
+    font-size: 1.3em;
+}
+
+.under-text{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+@media all and (max-width: 375px){
+
+    .container{
+        min-height: 90vh;
+        flex-flow: column-reverse;
+    }
+
+    .img-container{
+        width: 100%;
+        background-image: url(img/image-header-mobile.jpg);
+        height: 70vh;
+    }
+
+    .text-overall-container{
+        width: 100%;
+        min-height: 60vh;
+        text-align: center;
+    }
+
+    .text-container{
+        width: 100%;
+        margin: 0;
+        display: inline;
+    }
+
+    .numbers{
+        flex-flow: column;
+       justify-content: left;
+    }
+
+    .digits{
+        font-size: 18px;
+    }
+
+    .contents{
+        margin-bottom: 0;
+        line-height: 1.3em;
+    }
+
+    .heading{
+        margin: 0.5em 0.4em 0 0.4em;
+        font-size: 1.5em;
+    }
+
+    .first, .second, .third{
+        margin: 0.3em 0;
+    }
+
+}
